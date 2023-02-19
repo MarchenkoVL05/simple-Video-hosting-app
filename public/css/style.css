@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  align-items: center;
+}
+
+#lesson-title,
+#lesson-description {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+form div {
+  margin-bottom: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 5em;
+  text-align: right;
+  margin-right: 1em;
+}
+
+input[type='text'],
+textarea {
+  width: 20em;
+}
+
+button {
+  margin-top: 1em;
+  padding: 10px 20px;
+  background-color: #931818;
+  border: none;
+  color: white;
+}
+button:hover {
+  background-color: black;
+}
+
+#lesson-video {
+  width: 100%;
+  height: auto;
+  margin-top: 1em;
+}

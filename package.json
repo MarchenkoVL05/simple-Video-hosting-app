@@ -1,0 +1,16 @@
+{
+  "name": "lesson-creator",
+  "version": "1.0.0",
+  "description": "A simple app for creating and displaying lessons",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.9.2",
+    "multer": "^1.4.4",
+    "nodemon": "^2.0.20"
+  }
+}
