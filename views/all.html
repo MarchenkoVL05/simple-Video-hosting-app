@@ -55,11 +55,28 @@
             font-size: 20px;
             cursor: pointer;
         }
+
+        .grid-link {
+            margin: 20px auto 0;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 300;
+            background: #7bc619;
+            background: linear-gradient(0deg, #7bc619 0%, #18b52d 100%);
+            box-shadow: #00000059 0px 5px 15px;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            width: 220px;
+        }
     </style>
 </head>
 
 <body>
     <h1>Все уроки</h1>
+    <a class="grid-link" href="">Создать новый урок</a>
     <div class="grid">
         <div class="grid__item grid__item--main">Название</div>
         <div class="grid__item grid__item--main">Описание</div>
@@ -67,6 +84,11 @@
         <div class="grid__item grid__item--main">Действие</div>
     </div>
     <script src="/js/fetchAll.js"></script>
+    <script>
+        const link = document.querySelector(".grid-link");
+        const createLessonLink = "/" + "?password=aksioma";
+        link.href = createLessonLink;
+    </script>
 </body>
 
 </html>
