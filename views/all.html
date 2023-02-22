@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Все уроки</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans';
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .grid {
+            padding: 0 30px;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-content: center;
+        }
+
+        .grid__item {
+            border: 1px solid #1e1e1e;
+            padding: 15px 10px;
+            font-size: 22px;
+            font-weight: 500;
+            border-radius: 5px;
+        }
+
+        .grid__item--main {
+            border: 1px solid black;
+            padding: 15px 10px;
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .grid__btn {
+            padding: 10px 15px;
+            border: none;
+            background: #c32222;
+            background: linear-gradient(0deg, #c32222 0%, #ff3d3d 100%);
+            color: white;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Все уроки</h1>
+    <div class="grid">
+        <div class="grid__item grid__item--main">Название</div>
+        <div class="grid__item grid__item--main">Описание</div>
+        <div class="grid__item grid__item--main">Ссылка</div>
+        <div class="grid__item grid__item--main">Действие</div>
+    </div>
+    <script src="/js/fetchAll.js"></script>
+</body>
+
+</html>
