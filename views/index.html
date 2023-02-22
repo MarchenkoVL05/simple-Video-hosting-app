@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Создай урок</title>
-    <link
-      rel="shortcut icon"
-      type=" image/svg+xml"
-      href="https://www.aksioma.pro/favicon.svg"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
-    <div class="form-wrapper">
-      <h1>Создай урок</h1>
-      <form action="/create-lesson" method="post" enctype="multipart/form-data">
-        <div>
-          <label for="title">Название:</label>
-          <input type="text" id="title" name="title" required />
-        </div>
-        <div>
-          <label for="description">Описание:</label>
-          <textarea id="description" name="description" required></textarea>
-        </div>
-        <div>
-          <label for="video">Видео:</label>
-          <input
-            type="file"
-            id="video"
-            name="video"
-            accept="video/*"
-            required
-          />
-        </div>
-        <div>
-          <button type="submit">Создать</button>
-        </div>
-      </form>
-    </div>
-    <script src="/js/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Создай урок</title>
+  <link rel="shortcut icon" type=" image/svg+xml" href="https://www.aksioma.pro/favicon.svg" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans';
+    }
+  </style>
+  <div class="form-wrapper">
+    <h1>Создай урок</h1>
+    <form action="/create-lesson" method="post" enctype="multipart/form-data">
+      <div>
+        <label for="title">Название:</label>
+        <input type="text" id="title" name="title" required />
+      </div>
+      <div>
+        <label for="description">Описание:</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+      <div>
+        <label for="video">Видео:</label>
+        <input type="file" id="video" name="video" accept="video/*" required />
+      </div>
+      <div>
+        <button type="submit">Создать</button>
+      </div>
+    </form>
+  </div>
+  <script src="/js/main.js"></script>
+</body>
+
 </html>
