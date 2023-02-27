@@ -18,9 +18,22 @@
       padding: 0;
       font-family: 'Open Sans';
     }
+
+    .speed-button {
+      display: block;
+      margin: 20px auto 0;
+      border-radius: 10px;
+      background: rgb(25, 49, 198);
+      background: linear-gradient(0deg, rgba(25, 49, 198, 1) 0%, rgba(38, 118, 212, 1) 100%);
+      -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+      box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+      cursor: pointer;
+    }
   </style>
   <h1 id="lesson-title"></h1>
   <p id="lesson-description"></p>
+  <button class="speed-button">Скорость: 1x</button>
   <video id="lesson-video" controls controlsList="nodownload"></video>
   <script src="/js/main.js"></script>
 </body>

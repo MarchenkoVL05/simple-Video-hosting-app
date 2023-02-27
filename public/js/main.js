@@ -12,6 +12,21 @@ window.addEventListener("DOMContentLoaded", () => {
       lessonVideoEl.src = lesson.videoUrl;
     })
     .catch((err) => console.error("Error loading lesson", err));
+
+  // Скорость видео
+  let speeds = [0.5, 1, 1.5, 2];
+  let currentSpeedIndex = 1;
+
+  const speedButton = document.querySelector(".speed-button");
+
+  speedButton.addEventListener("click", (e) => {
+    currentSpeedIndex = (currentSpeedIndex + 1) % speeds.length;
+
+    var newSpeed = speeds[currentSpeedIndex];
+
+    lessonVideoEl.playbackRate = newSpeed;
+    e.target.textContent = "Скорость: " + newSpeed + "x";
+  });
 });
 
 document.addEventListener("contextmenu", (event) => event.preventDefault());
