@@ -130,7 +130,8 @@ app.use(function (req, res, next) {
   res.status(404).send("Не могу найти такую страницу!");
 });
 
-// 192.168.0.43
+// 192.168.0.43 - мой рабочий
+// 192.168.0.14 - сервер
 const port = process.env.PORT || 3000;
 app.listen(port, "192.168.0.43", () => {
   console.log(`Server listening at http://192.168.0.43:${port}`);
